@@ -24,13 +24,14 @@ A project that uses hand gesture recognition to control lights, integrating Goog
 conda create -n gesture_env python=3.10
 conda activate gesture_env
 pip install -r requirements.txt
+```
 
 ---
 ## Data collection 
 
 ```bash 
 python generate_landmark_data.py
-
+```
 ---
 ### Train the model 
 1. Load and preprocess the data: The dataset will be loaded from the .csv files generated earlier.
@@ -44,12 +45,14 @@ Command to run deployment:
 
 ```bash 
 python detect_simulation.py
+```
 
 Modify the script to set the mode:
 
 ```bash
 device = False  # Simulation mode
 # device = True  # Real hardware mode
+```
 ---
 
 ## License
